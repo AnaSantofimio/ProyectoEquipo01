@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inf personal</title>
+
+    <link rel="stylesheet" href="ipersonal.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fas fa-user""></i>
+            <h4>INFORMACION PERSONAL</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+           
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-search" title="Consultar"></i>
+                    <h4>Consultar</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-tools" title="Modificar"></i>
+                    <h4>Modificar</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-pen-alt" title="Crear"></i>
+                    <h4>Crear</h4>
+                </div>
+            </a>
+
+            
+        </div>
+
+    </div>
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Nombres -->
+			<div class="formulario__grupo" id="grupo__nombres">
+				<label for="nombres" class="formulario__label">Nombres</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombres" id="nombres" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que contener solo letras.</p>
+			</div>
+
+            <!-- Grupo: Apellidos -->
+			<div class="formulario__grupo" id="grupo__apellidos">
+				<label for="apellidos" class="formulario__label">Apellidos</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El apellido tiene que contener solo letras.</p>
+			</div>
+
+            <!-- Grupo: Nacionalidad -->
+			<div class="formulario__grupo" id="grupo__nacionalidad">
+				<label for="nacionalidad" class="formulario__label">Nacionalidad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nacionalidad" id="nacionalidad" placeholder="Colombiano">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La nacionalidad tiene que contener solo letras.</p>
+			</div
+
+            <!-- Grupo: Tipo de identificación -->
+			<div class="formulario__grupo" id="grupo__tipo de identificación">
+				<label for="tipo de identificación" class="formulario__label">Tipo de identificación</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="tipo de identificación" id="tipo de identificación" placeholder="Cedula">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Tipo de identificción tiene que ser cedula, T.I Cedula de extranjeria y pasaporte.</p>
+			</div
+
+            <!-- Grupo: Número de Identidicación -->
+			<div class="formulario__grupo" id="grupo__número de identificación">
+				<label for="número de identificación" class="formulario__label">Número de Identificación</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="número de identificación" id="número de identificación" placeholder="123456">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El número de identificación tiene que ser solo números.</p>
+			</div>
+
+            <!-- Grupo: Edad -->
+			<div class="formulario__grupo" id="grupo__edad">
+				<label for="edad" class="formulario__label">Edad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="edad" id="edad" placeholder="años">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La edad tiene que ser de 1 a 3 dígitos y solo puede contener numeros.</p>
+			</div>
+
+            <!-- Grupo: Dirección -->
+			<div class="formulario__grupo" id="grupo__dirección">
+				<label for="dirección" class="formulario__label">Dirección</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="dirección" id="dirección" placeholder="Calle">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La dirección tiene que ser de 4 a 16 dígitos y solo puede contener numeros y letras.</p>
+			</div
+
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            <!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__teléfono">
+				<label for="teléfono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="teléfono" id="telefono" placeholder="31234567890">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El teléfono debe tener 10 digitos.</p>
+			</div>
+          
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password"placeholder="*****">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+			
+			<!-- Grupo: Rol -->
+			<div class="formulario__grupo" id="grupo__rol">
+				<label for="rol" class="formulario__label">Rol</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="rol" id="rol" placeholder="administrador">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El rol solo puede contener estudiante, profesor, administrador.</p>
+			</div>
+
+			
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+    </main>
+    <script src="ipersonal.js"></script>
+</body>
+</html>
