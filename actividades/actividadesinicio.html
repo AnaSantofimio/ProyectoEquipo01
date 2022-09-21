@@ -21,10 +21,8 @@
 
             <div class="sidebar-heading border-bottom bg-light">Universidad de los Andes</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Informacion</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Actividades</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Materias</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Notas</a>
+
 
             </div>
         </div>
@@ -59,41 +57,42 @@
             </nav>
             <!-- Page content-->
             <div class="container-fluid">
-                <h1 class="mt-4">Administrador</h1>
-                <p>Selecciona la categoria correspondiente a la busqueda.</p>
-                <form action="#FormularioconlaINFO">
-                    <p> Buscar por código: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}"
-                            title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito"
-                            required>
-                        <input type="submit" value="Buscar">
-                    </p>
-                </form>
-                <form action="#FormularioNotas">
-                    <p> Notas: <input type="text" name="notas" id="caja" disabled placeholder="0.0 a 5.0">
-                        <button class="btn btn-primary" name="botonAgregar" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Agregar</button>
-                        <button class="btn btn-primary" name="botonEditar" type="submit"
-                            onclick="activarcaja1()">Editar</button>
-                        <button class="btn btn-primary" name="botonEliminar" type="submit">Eliminar</button>
-                    </p>
-                </form>
-                <form action="#FormularioMaterias">
-                    <p> Materia: <input type="text" name="materias" id="caja2" disabled placeholder="Materia">
-                        <button class="btn btn-primary" name="botonAgregar" type="submit">Agregar</button>
-                        <button class="btn btn-primary" name="botonEditar" type="submit"
-                            onclick="activarcaja2()">Editar</button>
-                        <button class="btn btn-primary" name="botonEliminar" type="submit">Eliminar</button>
-                    </p>
-                </form>
-                <form action="#FormularioActividades">
-                    <p> Actividad: <input type="text" name="actividades" id="caja3" disabled placeholder="Actividad">
-                        <button class="btn btn-primary" name="botonAgregar" type="submit">Agregar</button>
-                        <button class="btn btn-primary" name="botonEditar" type="submit"
-                            onclick="activarcaja3()">Editar</button>
-                        <button class="btn btn-primary" name="botonEliminar" type="submit">Eliminar</button>
-                    </p>
-                </form>
+                <h1 class="mt-4">Actividades</h1>
+                <p>Tener en cuenta los limites en la fecha de entrega de las actividades.</p>
+                <section class="container">
 
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>Seleccionar Materia: </h4>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <select class="form-control">
+                                <option>Seleccione</option>
+                                <option>Metodologia de la investigación</option>
+                                <option>Pedagogía inclusiva</option>
+                                <option>Didactica de las ciencias humanas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="container"> <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                          Actividad 2 metodologia 
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Actividad 3 metodologia </a>
+                        <a href="#" class="list-group-item list-group-item-action">Actividad 1 pedagogia</a>
+                        <a href="#" class="list-group-item list-group-item-action">Actividad 1 Didactica</a>
+                        <a class="list-group-item list-group-item-action disabled">Actividad 1 metodologia vencida</a>
+                      </div>
+
+                        <button type="button" class="btn btn-primary btn-sm">Descargar Actividades</button>
+                        <a class="btn btn-primary btn-sm" href="subiractividad.html" role="button">Subir</a>
+                    </div>
+
+
+                </section>
             </div>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -109,7 +108,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            
+
                         </div>
                     </div>
                 </div>
