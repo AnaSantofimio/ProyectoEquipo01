@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(50, 110, 180);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.upload-container{
+    margin: 100px;
+    width: 500px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+
+}
+.upload-container > .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.upload-container .description{
+    color: #777;
+    margin-bottom: 20px;
+}
+.upload-container .drag-drop{
+    border: dashed 4px grey ;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    margin: 20px 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #777;
+    gap: 10px;
+}
